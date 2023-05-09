@@ -55,7 +55,7 @@ def preprocess_image(image):
     img = Image.open(image)
 
     # Resize the image to the desired size
-    img = img.resize((224, 224))
+    img = img.resize((226, 226))
 
     # Convert the image to a NumPy array
     img_array = np.array(img)
