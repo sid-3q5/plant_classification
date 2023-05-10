@@ -93,7 +93,7 @@ if uploaded_file is not None:
     pred = np.argmax(prediction, axis=-1)
 
     # Display the prediction result
-    st.write(f"The leaf is: {class_labels[pred[0]]}")
+    st.write(f"The leaf is: {class_labels[pred[1]]}")
 
     # Extract the class label and confidence score for the top predicted class
     class_index = np.argmax(prediction[0])
