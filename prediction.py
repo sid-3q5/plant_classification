@@ -24,8 +24,6 @@ def main():
         # Add content for Home page here
     elif choice == 'About Us':
         st.header('About Us')
-        st.write('Our project is focused on the automatic identification of fish species. This technology has the potential to greatly benefit humans in a number of ways.')
-        st.write('For example, it can help with conservation efforts by allowing for more accurate tracking of fish populations. It can also aid in the fishing industry by allowing for more efficient and sustainable fishing practices.')
         # Add content for About Us page here
 
 # Set background color to white
@@ -99,6 +97,6 @@ if uploaded_file is not None:
     class_index = np.argmax(prediction[0])
     # class_label = 'class_labels'  # Replace with the actual class name corresponding to class_index
     confidence_score = prediction[0][class_index]
-    # st.write(f"The predicted fish species is: {class_labels[pred[0]]}")
+    # st.write(f"The predicted leaf is: {class_labels[pred[0]]}")
     st.write(
         f'Top predicted class: {class_labels[pred[0]]} (confidence: {confidence_score:.2f})')
